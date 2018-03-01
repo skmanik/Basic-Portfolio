@@ -138,6 +138,10 @@ nav .folio-tabs a:last-child {
     border: 1px solid #dddddd;
 }
 
+.main .side-panel a {
+    text-decoration: none;
+}
+
 .main .side-panel a:last-child {
     margin-left: 2px;
 }
