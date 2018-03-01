@@ -1,3 +1,15 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 html, body { height: 100%; }
 
 body {
@@ -29,6 +41,10 @@ h2 {
     border-bottom: 2px solid #dddddd;
     margin-bottom: 20px;
     line-height: 1.4em;
+}
+
+em {
+    font-style: italic;
 }
 
 .clearfix:after { 
@@ -93,7 +109,6 @@ nav .folio-tabs a:last-child {
 }
 
 .main .bio {
-    box-sizing: border-box;
     padding: 30px;
     background: #fff;
     width: 650px;
@@ -114,7 +129,6 @@ nav .folio-tabs a:last-child {
 }
 
 .main .side-panel {
-    box-sizing: border-box;
     padding: 30px;
     width: 270px;
     height: 200px;
@@ -130,6 +144,7 @@ nav .folio-tabs a:last-child {
 
 .main .side-panel a img {
     width: 64px;
+    opacity: 0.8;
 }
 
 .main .side-panel #stupidpic img {
@@ -143,7 +158,6 @@ nav .folio-tabs a:last-child {
 }
 
 footer {
-    box-sizing: border-box;
     text-align: center;
     background: #666;
     width: 100%;
@@ -195,7 +209,6 @@ input, textarea {
     height: 200px;
     background: #ddd;
     margin-right: 28px;
-    box-sizing: border-box;
     text-decoration: none;
     overflow: hidden;
 }
@@ -226,4 +239,44 @@ input, textarea {
     left: 0;
     width: inherit;
     height: inherit;
+}
+
+/* Animations */
+
+#logo:hover,
+#logo:active,
+#logo:focus {
+    background: #489c97;
+}
+
+nav .folio-tabs a:hover, 
+nav .folio-tabs a:active, 
+nav .folio-tabs a:focus {
+    color: #4faba5 !important;
+}
+
+.main .side-panel a img:hover, 
+.main .side-panel a img:active, 
+.main .side-panel a img:focus {
+    opacity: 1;
+}
+
+.port-cell span {
+    transition: ease-in-out 0.15s;
+}
+
+.port-cell:hover span {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.port-cell img {
+    transition: ease-in-out 0.15s;
+}
+
+.port-cell:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
