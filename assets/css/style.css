@@ -245,7 +245,9 @@ input, textarea {
 
 #logo:hover,
 #logo:active,
-#logo:focus {
+#logo:focus,
+.main .bio p .button:hover, 
+.main .bio p .button:active {
     background: #489c97;
 }
 
