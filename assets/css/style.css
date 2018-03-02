@@ -171,7 +171,8 @@ footer {
 }
 
 footer span {
-    line-height: 85px;
+    display: block;
+    padding-top: 25px;
     font-size: 75%;
     color: #dddddd;
 }
