@@ -159,6 +159,7 @@ nav .folio-tabs a:last-child {
 
 .push {
     height: 145px;
+    clear: both;
 }
 
 footer {
